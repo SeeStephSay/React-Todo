@@ -1,0 +1,22 @@
+html,
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	color: snow;
+	background: rgb(27, 133, 133);
+}
+
+button {
+	color: rgb(27, 133, 133);
+	background: snow;
+	border: 1px solid rebeccapurple;
+	border-radius: 5px;
+}

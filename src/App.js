@@ -24,13 +24,13 @@ class App extends React.Component {
 		super();
 		this.state = {
 			todos : todos,
-			item  : '',
+			task  : '',
 		};
 	}
 
 	addItem = (newTodoText) => {
 		const newItem = {
-			item      : newTodoText,
+			task      : newTodoText,
 			id        : Date.now(),
 			completed : false,
 		};
@@ -56,8 +56,8 @@ class App extends React.Component {
 
 	deleteTask = (e) => {
 		this.setState({
-			todos : this.state.todos.filter((item) => {
-				return !item.completed;
+			todos : this.state.todos.filter((task) => {
+				return !task.completed;
 			}),
 		});
 	};
@@ -66,7 +66,7 @@ class App extends React.Component {
 		return (
 			<div>
 				<h2>Welcome to your Todo App!</h2>
-				<TodoForm value={this.state.item} handleChange={this.handleChanges} addItem={this.addItem} />
+				<TodoForm value={this.state.task} handleChange={this.handleChanges} addItem={this.addItem} />
 				<TodoList toggleCompleted={this.toggleCompleted} todos={this.state.todos} deleteTask={this.deleteTask} />
 				<button className='delete-btn' onClick={this.deleteTask}>
 					Clear Completed

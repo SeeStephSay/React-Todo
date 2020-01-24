@@ -10,8 +10,14 @@ body {
 }
 
 body {
+	padding: 5%;
 	color: snow;
 	background: rgb(27, 133, 133);
+}
+
+#root {
+	display: flex;
+  justify-content: center;
 }
 
 button {

@@ -2,6 +2,7 @@
 // feel free to change this component.js into TodoList.js
 import React, { Component } from 'react';
 import Todo from './Todo';
+import './TodoList.css';
 
 class TodoList extends Component {
 	constructor(props) {

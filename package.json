@@ -4,9 +4,10 @@
   "private": true,
   "dependencies": {
     "core-js": "^3.6.4",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
+    "react-flip-move": "^3.0.4",
     "react-scripts": "^3.3.0",
     "typescript": "^3.7.4"
   },

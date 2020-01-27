@@ -1,0 +1,58 @@
+.container {
+	margin: 0 auto;
+	padding: 1%;
+	background: teal;
+	font-family: 'Architects Daughter', cursive;
+	border-radius: 5px;
+	width: 50%;
+	text-align: center;
+}
+
+h2 {
+	color: hsl(180, 100%, 95%);
+	font-family: 'Fjalla One', sans-serif;
+}
+
+input {
+	margin: 1%;
+	padding: 1%;
+	border: none;
+	background: hsl(180, 100%, 95%);
+	justify-content: center;
+	border-radius: 5px;
+	font-family: 'Fjalla One', sans-serif;
+	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.clear-btn,
+.add-btn {
+	background: hsl(180, 100%, 85%);
+	border-radius: 5px;
+	border: none;
+	margin: 1%;
+	padding: 1%;
+	font-family: 'Fjalla One', sans-serif;
+	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.todoList {
+	display: flex;
+	align-items: center;
+	flex-flow: column wrap;
+}
+
+.item {
+	background: hsl(180, 100%, 85%);
+	width: 90%;
+	font-size: 1.3rem;
+	display: flex;
+	justify-content: space-evenly;
+	border-radius: 5px;
+	margin: 1%;
+	padding: 0.5%;
+	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.item.completed {
+	text-decoration: line-through;
+}

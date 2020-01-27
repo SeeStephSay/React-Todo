@@ -61,6 +61,12 @@ class App extends React.Component {
 		this.setState({ todoData });
 	};
 
+	handleChanges = (e) => {
+		this.setState({ [e.target.name]: e.target.value });
+  };
+  
+  
+
 	render() {
 		return (
 			<div className='container'>

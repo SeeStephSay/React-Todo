@@ -55,6 +55,12 @@ class App extends React.Component {
 		});
 	};
 
+	clearCompleted = (e) => {
+		e.preventDefault();
+		let todoData = this.state.todoData.filter((todo) => !todo.completed);
+		this.setState({ todoData });
+	};
+
 	render() {
 		return (
 			<div className='container'>

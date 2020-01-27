@@ -1,0 +1,26 @@
+.container {
+	margin: 0 auto;
+	border: 2px solid rebeccapurple;
+	width: 50%;
+	text-align: center;
+}
+
+.todoList {
+  display: flex;
+  align-items: center;
+	flex-flow: column wrap;
+}
+
+.item {
+	background: snow;
+	width: fit-content;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 1%;
+	padding: 1%;
+}
+
+.item.completed {
+	background: red;
+	text-decoration: line-through;
+}

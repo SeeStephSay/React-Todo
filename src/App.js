@@ -22,7 +22,7 @@ class App extends React.Component {
 
 		this.state = {
 			todoData : todoData,
-			list     : '',
+			newItem  : '',
 		};
 	}
 	// you will need a place to store your state in this component.
@@ -74,13 +74,13 @@ class App extends React.Component {
 		return (
 			<div className='container'>
 				<h2>Welcome to your To-Do App!</h2>
-				<TodoList todos={this.state.todoData} toggleList={this.toggleList} />
 				<TodoForm
 					addItem={this.addItem}
 					clearCompleted={this.clearCompleted}
 					submitTodo={this.submitTodo}
 					handleChanges={this.handleChanges}
 				/>
+				<TodoList todos={this.state.todoData} toggleList={this.toggleList} />
 			</div>
 		);
 	}

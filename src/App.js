@@ -63,9 +63,12 @@ class App extends React.Component {
 
 	handleChanges = (e) => {
 		this.setState({ [e.target.name]: e.target.value });
-  };
-  
-  
+	};
+
+	submitTodo = (e) => {
+		e.preventDefault();
+		this.addItem(this.state.list);
+	};
 
 	render() {
 		return (

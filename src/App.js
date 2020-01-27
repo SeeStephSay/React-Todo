@@ -42,9 +42,19 @@ class App extends React.Component {
 				}
 			}),
 		});
-  };
-  
-  
+	};
+
+	addItem = (itemName) => {
+		const newItem = {
+			task      : itemName,
+			id        : Date.now(),
+			completed : false,
+		};
+		this.setState({
+			todoData : [ ...this.state.todoData, newItem ],
+		});
+	};
+
 	render() {
 		return (
 			<div className='container'>

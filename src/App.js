@@ -1,4 +1,6 @@
 import React from 'react';
+import TodoForm from './components/TodoComponents/TodoForm';
+import TodoList from './components/TodoComponents/TodoList';
 
 const exampleTodos = [
 	{
@@ -24,14 +26,20 @@ class App extends React.Component {
 		};
 	}
 
+	// Class methods to update state
+
 	render() {
 		return (
-			<div className='App'>
-				<div className='header'>
-					<h2>To-Dos</h2>
-					<TodoForm />
+			<div className='paper'>
+				<div className='pattern'>
+					<div className='content'>
+						<div className='header'>
+							<h2>To-Dos</h2>
+							<TodoForm />
+						</div>
+						<TodoList />
+					</div>
 				</div>
-				<TodoList />
 			</div>
 		);
 	}

@@ -1,0 +1,51 @@
+body {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+/* styling paper */
+.paper {
+	width: 60%;
+	max-width: 65%;
+	height: 70%;
+	position: relative;
+	margin: 5% auto;
+	padding: 4% auto;
+	display: flex;
+	justify-content: center;
+	background: white;
+	text-align: center;
+	box-shadow: 0px 0px 5px 0px #888;
+	font-family: 'Shadows Into Light', cursive;
+}
+
+/* styling red vertical line */
+.paper::before {
+	content: '';
+	width: 0, 2%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 4%;
+	background: rgba(255, 0, 0, 0.6);
+}
+
+/* styling blue horizontal lines */
+.pattern {
+	height: 100%;
+	background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
+}
+
+/* styling text content */
+.content {
+	padding: 6px 16px 0px 56px;
+	line-height: 25px;
+	font-size: 1.9rem;
+	letter-spacing: 1px;
+	font-family: 'Shadows Into Light', cursive;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
